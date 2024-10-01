@@ -1,0 +1,21 @@
+#form-container {
+    background-color: #fff;
+}
+
+#sign-up-form {
+    display: flex;
+    flex-direction: row;
+
+    flex-wrap: wrap;
+}
+
+.input-group {
+    display: flex;
+    flex-direction: column;
+    flex: 0 1 50%;
+}
+
+label,
+input {
+    max-width: 250px
+}

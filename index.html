@@ -8,6 +8,50 @@
     <title>Form Project</title>
 </head>
 <body>
-    
+    <div id="page-container">
+        <div id="left-pane">
+            <div id="banner"></div>
+            <p id="photoCredit"></p>
+        </div>
+        <div id="right-pane">
+            <div id="intro">
+                <p>This is not a real online service! You know you need something 
+                    in your life to help you realize your deepest dreams.
+                    Sign up now to get started.</p>
+                <p>You <em>know</em> you want to.</p>
+            </div>
+            <div id="formcontainer">
+                <p id="form-message">Let's do this!</p>
+                <form id="sign-up-form" action="submit" method="post">
+                    <div class="input-group">
+                        <label for="first-name">First Name</label>
+                        <input type="text" name="first-name" id="first-name">
+                    </div>
+                    <div class="input-group">
+                        <label for="last-name">Last Name</label>
+                        <input type="text" name="last-name" id="last-name">
+                    </div>
+                    <div class="input-group">
+                        <label for="email">email</label>
+                        <input type="email" name="email" id="email">
+                    </div>
+                    <div class="input-group">
+                        <label for="phone-number">Phone Number</label>
+                        <input type="number" name="phone-number" id="phone-number">
+                    </div>
+                    <div class="input-group">
+                        <label for="password">Password</label>
+                        <input type="password" name="password" id="password">
+                    </div>
+                    <div class="input-group">
+                        <label for="confirm-password">Confirm Password</label>
+                        <input type="password" name="confirm-password" id="confirm-password">
+                    </div>
+                </form>
+                <button type="submit">Create Account</button>
+                <p>Already have an account? <a id="log-in-link" href="#">Log in</a></p>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
