@@ -5,13 +5,17 @@
     <link rel="stylesheet" href="style.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="scripts.js" defer></script>
     <title>Form Project</title>
 </head>
 <body>
     <div id="page-container">
         <div id="left-pane">
-            <div id="banner"></div>
-            <p id="photoCredit"></p>
+            <div id="banner">
+                <img src="https://cdn.statically.io/gh/TheOdinProject/curriculum/5f37d43908ef92499e95a9b90fc3cc291a95014c/html_css/project-sign-up-form/odin-lined.png" alt="Odin Logo">
+                <p>ODIN</p>
+            </div>
+            <p id="photo-credit">Photo by <a href="https://unsplash.com/@haliewestphoto">Halie West</a> on <a href="https://unsplash.com/photos/green-leaf-plant-in-close-up-photography-25xggax4bSA">Unsplash</a></p>
         </div>
         <div id="right-pane">
             <div id="intro">
@@ -37,7 +41,7 @@
                     </div>
                     <div class="input-group">
                         <label for="phone-number">Phone Number</label>
-                        <input type="number" name="phone-number" id="phone-number">
+                        <input type="tel" name="phone-number" id="phone-number" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}">
                     </div>
                     <div class="input-group">
                         <label for="password">Password</label>

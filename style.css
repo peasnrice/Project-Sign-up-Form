@@ -1,11 +1,68 @@
+@font-face {
+    font-family: Norse-Bold;
+    src: url("https://cdn.statically.io/gh/TheOdinProject/theodinproject/efdc2888072f409e687d31dc580595dbe4fe0ff4/app/assets/fonts/Norse-Bold.otf");
+}
+
+#page-container {
+    display: flex;
+    margin: 0 160px;
+    height: 100vh;
+}
+
+#left-pane {
+    display: flex;
+    flex-direction: column;
+    background-image: url("https://images.unsplash.com/photo-1585202900225-6d3ac20a6962?q=80&w=1862&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-width: 460px;
+    padding-top: 195px;
+}
+
+#banner {
+    height: 130px;
+    background-color: aqua;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-family: "Norse-Bold";
+    background-color: rgba(0, 0, 0, 40%);
+}
+
+#banner img {
+    max-height: 100%;
+}
+
+#banner p {
+    text-align: center;
+    color: white;
+    font-size: 5em;
+}
+
+#photo-credit {
+    justify-content: center;
+    margin: auto auto 10px auto;
+    align-self: flex-end;
+    color: #fff;
+}
+
+a {
+    color: #fff;
+    text-decoration: underline;
+}
+
+.right-pane {
+    flex: 1 1 70%;
+}
+
 #form-container {
-    background-color: #fff;
+    display: flex;
 }
 
 #sign-up-form {
     display: flex;
     flex-direction: row;
-
     flex-wrap: wrap;
 }
 
@@ -17,5 +74,46 @@
 
 label,
 input {
-    max-width: 250px
+    max-width: 250px;
+    margin: 0 10px;
+}
+
+input {
+    border-color: #E5E7EB;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 5px;
+}
+
+input:focus {
+    border-color: #000;
+    box-shadow: 0 0 0.5em #6b8bff;
+    padding: auto;
+}
+
+input:invalid {
+    border-color: red;
+}
+
+input.invalid {
+    border-color: red;
+}
+
+button {
+    background-color: #596D48;
+    border-radius: 10px;
+    margin: 10px;
+    padding: 10px 30px;
+    color: #fff;
+    flex: auto;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+#log-in-link {
+    color: #596D48;
+    font-weight: bold;
+    text-decoration: none;
 }
