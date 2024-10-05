@@ -15,10 +15,14 @@ function validatePassword() {
     }
 }
 
-password.addEventListener("focusout", () => {
-    validatePassword();
-})
+function handleTab(event) {
+    if (event.key === "Tab") {
+        validatePassword();
+    }
+}
 
-confirmPassword.addEventListener("focusout", () => {
-    validatePassword();
-})
+password.addEventListener("focusout", validatePassword);
+confirmPassword.addEventListener("focusout", validatePassword);
+
+password.addEventListener("keydown", handleTab);
+confirmPassword.addEventListener("keydown", handleTab);

@@ -5,6 +5,8 @@
 
 body {
     background-color: #F9FAFB;
+    font-family: 'Roboto', sans-serif;
+    /* Use Roboto font */
 }
 
 #page-container {
@@ -18,8 +20,9 @@ body {
     background-image: url("https://images.unsplash.com/photo-1585202900225-6d3ac20a6962?q=80&w=1862&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
     background-repeat: no-repeat;
     background-size: cover;
-    min-width: 460px;
+    /* min-width: 460px; */
     padding-top: 195px;
+    flex: 1 1 40%;
 }
 
 #banner {
@@ -59,6 +62,7 @@ a {
     display: flex;
     justify-content: center;
     flex-direction: column;
+    flex: 1 1 60%;
 }
 
 #form-container {
@@ -69,12 +73,13 @@ a {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    gap: 10px;
 }
 
 .input-group {
     display: flex;
     flex-direction: column;
-    flex: 0 1 50%;
+    flex: 0 1 40%;
     margin: 5px 0;
 }
 
@@ -97,9 +102,11 @@ input {
 }
 
 input:focus {
-    border-color: #000;
-    box-shadow: 0 0 0.5em #6b8bff;
+    border-color: #596D48;
+    box-shadow: 0 0 0.1em #596D48;
     padding: auto;
+    background-color: rgba(249, 250, 251, 80%);
+    outline: none;
 }
 
 input:invalid {
@@ -130,7 +137,7 @@ button:hover {
 }
 
 #intro {
-    font-weight: 600;
+    font-weight: 400;
 }
 
 #intro>:last-child {
@@ -147,10 +154,32 @@ button:hover {
     padding: 30px 40px;
 }
 
+#buttons>button {
+    margin-top: 20px;
+    min-width: 180px;
+}
+
+#buttons>button:hover {
+    background-color: rgba(89, 109, 72, 90%);
+}
+
+#buttons>button:active {
+    background-color: rgba(89, 109, 72, 100%);
+}
+
 #buttons>p {
     margin-top: 20px;
 }
 
 #form-message {
     font-weight: 600;
+    margin-bottom: 20px
+}
+
+#log-in-link:hover {
+    color: rgba(89, 109, 72, 90%);
+}
+
+#log-in-link:active {
+    color: rgba(89, 109, 72, 100%);
 }
